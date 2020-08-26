@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <style>
+            #title, #description{
+              text-align:center;
+            }
+            #description{
+              font-style: italic;
+              font-size:18px;
+            }
+
+            #survey-form{
+              background-color:#282746;
+              margin-left:250px;
+              margin-right: 250px;
+              padding-left: 50px;
+              padding-right: 50px;
+              padding-top: 50px;
+              padding-bottom: 100px;
+              color: white;
+              font-size: 20px;
+            }
+
+            input[type=text], input[type=email], input[type=number], input[type=submit], select{
+              width:100%;
+              font-size: 20px;
+              height:35px;
+              margin-top:15px;
+            }
+            input[type=submit]{
+              background-color:#37AF65;
+              height:50px;
+              color: white;
+              border-color:#37AF65;
+            }
+            textarea{
+              margin-top:15px;
+              font-size:17px;
+
+            }
+        </style>
+    </head>
+        
+    <body>
+            <!-- 
+            Hello Camper!
+            For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+            - The freeCodeCamp Team 
+            -->
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+            <form id="survey-form">
+                      <label id="name-label">Name</label><br/>
+                      <input id="name" type="text" placeholder="Enter your name" required/><br/><br/>
+
+                      <label id="email-label">Email</label><br/>
+                      <input id="email" type="email" placeholder="Enter your email" required/><br/><br/>
+
+                      <label id="number-label">Age (optional)</label><br/>
+                      <input id="number" type="number" placeholder="Age" min="1" max="2020" /><br/><br/>
+
+                      <label>Would you recommend freeCodeCamp to a friend?</label><br/> 
+                      <input type="checkbox" value="Definitely"> Definitely<br/> 
+                      <input type="checkbox" value="May be"> May be<br/> 
+                      <input type="checkbox" value="not sure"> Not sure<br/> <br/> 
+
+
+
+                      <label>What is your favorite feature of freeCodeCamp?</label><br/>
+                      <select id="dropdown">
+                        <option select disable>Select an option</option>
+                        <option value="Challenges">Challenges</option>
+                        <option value="Projects">Projects</option>
+                        <option value="Community">Community</option>
+                        <option value="Open source">Open source</option>
+                      </select><br/><br/>
+
+
+                     <fieldset>
+                        <legend>What would you like to see improved? (Check all that apply)</legend>
+                        <input type="radio" name="choice" value="Front-end Projects" /> Front-end Projects<br/> 
+                        <input type="radio" name="choice" value="Back-end Projects" /> Back-end Projects<br/> 
+                        <input type="radio" name="choice" value="Data Visualization" /> Data Visualization<br/> 
+                        <input type="radio" name="choice" value="Challenges" /> Challenges<br/> 
+                        <input type="radio" name="choice" value="Open Source Community" /> Open Source Community<br/> 
+                        <input type="radio" name="choice" value="Gitter help rooms" /> Gitter help rooms<br/>
+                        <input type="radio" name="choice" value="Videos" /> Videos<br/> 
+                        <input type="radio" name="choice" value="City Meetups" /> City Meetups<br/> 
+                        <input type="radio" name="choice" value="Wiki" /> Wiki<br/> 
+                        <input type="radio" name="choice" value="Forum" /> Forum<br/> 
+                        <input type="radio" name="choice" value="Additional courses" /> Additional courses<br/> 
+                      </fieldset><br/><br/>
+
+                      <label>Any comments or suggestions?</label><br/>
+                      <textarea rows="7" style="width:100%;" placeholder="Enter your comment here...">
+
+                      </textarea><br/><br/>
+
+                      <input type="submit" id="submit" value="Submit" />
+            </form>
+    </body>
+
+
+
+
+</html>
